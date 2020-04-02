@@ -7,9 +7,9 @@ app.use(express.json());
 
 mongoose.connect(
   "mongodb://localhost:27017/jshunt",
-  { useNewUrlParser: true, useUnifiedTopology: true }
+  { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true }
 );
-requireDir("./src/models");
+requireDir("./models");
 
-app.use("/api", require("./src/routes"));
+app.use("/api", require("./routes"));
 app.listen(3001);
