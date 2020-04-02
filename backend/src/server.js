@@ -5,10 +5,12 @@ const mongoose = require("mongoose");
 const app = express();
 app.use(express.json());
 
-mongoose.connect(
-  "mongodb://localhost:27017/jshunt",
-  { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true }
-);
+mongoose.connect( "mongodb://localhost:27017/jshunt", { 
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useCreateIndex: true,
+  useFindAndModify: false
+});
 requireDir("./models");
 
 app.use("/api", require("./routes"));

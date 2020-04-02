@@ -1,12 +1,13 @@
 const express = require("express");
+const requireDir = require("require-dir");
 const routes = express.Router();
+const controllers = requireDir("./controllers");
 const authMiddleware = require("./middlewares/auth");
 
-const GameController = require("./controllers/GameController");
-const AuthController = require("./controllers/AuthController");
-
-routes.get('/games', authMiddleware, GameController.index);
-routes.post('/login', AuthController.index);
-routes.post('/register', AuthController.store);
+routes.get("/games", authMiddleware, controllers.GameController.index);
+routes.post('/login', controllers.AuthController.index);
+routes.post('/register', controllers.AuthController.store);
+routes.post("/forgot-password", controllers.AuthController.forgot);
+routes.post("/reset-password", controllers.AuthController.reset);
 
 module.exports = routes;

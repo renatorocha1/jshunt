@@ -1,0 +1,12 @@
+{
+  "mailerHost": "smtp.mailtrap.io",
+  "mailerPort": 2525,
+  "mailerUser": "3c690b5f5ab339",
+  "mailerPass": "c1ad05e347c843",
+  "dbHost": "",
+  "dbPort": "",
+  "dbName": "",
+  "dbUser": "",
+  "dbPass": "",
+  "appSecretHash": "b5df8e6a8674fa8005533ea9a954b7cb"
+}
