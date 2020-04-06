@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const AttributeSchema = new mongoose.Schema({
+const CategoryItemSchema = new mongoose.Schema({
   title: {
     type: String,
     required: true
@@ -8,7 +8,8 @@ const AttributeSchema = new mongoose.Schema({
   image: {
     type: String,
     required: true
-  }
+  },
+  attributes: []
 });
 
-mongoose.model("Attribute", AttributeSchema);
+mongoose.model("CategoryItem", CategoryItemSchema);

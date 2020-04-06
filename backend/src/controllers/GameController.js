@@ -1,9 +1,53 @@
 const mongoose = require("mongoose");
-const Game = mongoose.model("Game");
+const GameModel = mongoose.model("Game");
 
 module.exports = {
   async index(req, res) {
-    const games = await Game.find();
+    const games = await GameModel.find();
     return res.json(games);
-  }
-}
+  },
+  async store(req, res) {
+    const {
+      originalname: avatarName,
+      key: avatarKey,
+      location: avatarUrl = "",
+    } = req.file;
+    const { title, description } = req.body;
+    try {
+      const game = await GameModel.create({
+        title,
+        description,
+        avatarName,
+        avatarKey,
+        createdBy: req.userId,
+        avatarUrl,
+      });
+      return res.json({ game });
+    } catch (error) {
+      console.log(error);
+      return res.status(400).send({ error: "Error creating a new game" });
+    }
+  },
+  async show(req, res) {
+    const id = req.params.id;
+    try {
+      const game = await GameModel.findById(id);
+      if(!game)
+        return res.status(404).send({ error: "Not found game"});
+      return res.send(game);
+    } catch (error) {
+      return res.status(400).send({ error: "Error getting game"});
+    }
+  },
+  async destroy(req, res) {
+    const id = req.params.id;
+    try {
+      const game = await GameModel.findById(id);
+      if (!game) return res.status(404).send({ error: "Not found game" });
+      await game.remove();
+      res.send();
+    } catch (error) {
+      return res.status(400).send({ error: "Error removing game" });
+    }
+  },
+};

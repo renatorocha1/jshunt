@@ -1,0 +1,14 @@
+header#main-header {
+  background-color: red;
+}
+.logo-header {
+  display: flex;
+}
+.logo-header h1 {
+  font-family: Myriad Pro, Helvetica, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+.logo-header span {
+  font-weight: 400;
+}

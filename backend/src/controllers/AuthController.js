@@ -2,13 +2,13 @@ const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
 const crypto = require("crypto");
 const jwt = require("jsonwebtoken");
-const config = require("../config.json");
+const { APP_HASH } = process.env;
 const mailer = require("../modules/mailer");
 const UserModel = mongoose.model("User");
 
 function generateToken(params = {}){
-  return jwt.sign(params, config.appSecretHash, {
-    expiresIn: 86400
+  return jwt.sign(params, APP_HASH, {
+    expiresIn: 86400,
   });
 }
 
