@@ -39,6 +39,33 @@ module.exports = {
       return res.status(400).send({ error: "Error getting game"});
     }
   },
+  async update(req, res) {
+    const {
+      originalname: avatarName,
+      key: avatarKey,
+      location: avatarUrl = "",
+    } = req.file;
+    const { title, description } = req.body;
+    const id = req.params.id;
+
+    try {
+      const game = await GameModel.findById(id);
+
+      if(!game)
+        return res.status(404).send({ error: "Not found game"});
+
+      await game.update({
+        title,
+        description,
+        avatarName,
+        avatarKey,
+        avatarUrl,
+      });
+      return res.send(game);
+    } catch (error) {
+      return res.status(400).send({ error: "Error getting game"});
+    }
+  },
   async destroy(req, res) {
     const id = req.params.id;
     try {
