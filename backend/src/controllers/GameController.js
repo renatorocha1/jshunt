@@ -7,11 +7,7 @@ module.exports = {
     return res.json(games);
   },
   async store(req, res) {
-    const {
-      originalname: avatarName,
-      key: avatarKey,
-      location: avatarUrl = "",
-    } = req.file;
+    const { originalname: avatarName, key: avatarKey, location: avatarUrl = "", } = req.file;
     const { title, description } = req.body;
     try {
       const game = await GameModel.create({
@@ -61,7 +57,7 @@ module.exports = {
         avatarKey,
         avatarUrl,
       });
-      return res.send(game);
+      return res.send();
     } catch (error) {
       return res.status(400).send({ error: "Error getting game"});
     }

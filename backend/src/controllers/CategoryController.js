@@ -40,7 +40,7 @@ module.exports = {
       const category = await CategoryModel.findByIdAndUpdate(req.params.id, {
         title
       });
-      return res.send(category);
+      return res.send();
     } catch (error) {
       return res.status(400).send({ error: "Error updating category" });
     }
