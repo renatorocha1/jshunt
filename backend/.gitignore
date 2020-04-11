@@ -1,5 +1,5 @@
 config.json
-/temp/uploads/*
+/temp/uploads/*.*
 
 # dependencies
 /node_modules

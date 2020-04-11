@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const GameModel = mongoose.model("Game");
+const MapModel = mongoose.model("Map");
 
 module.exports = {
   async index(req, res) {
@@ -7,7 +8,7 @@ module.exports = {
     return res.json(games);
   },
   async store(req, res) {
-    const { originalname: avatarName, key: avatarKey, location: avatarUrl = "", } = req.file;
+    const { originalname: avatarName, key: avatarKey, location: avatarUrl = "" } = req.file;
     const { title, description } = req.body;
     try {
       const game = await GameModel.create({
@@ -29,8 +30,11 @@ module.exports = {
     try {
       const game = await GameModel.findById(id);
       if(!game)
-        return res.status(404).send({ error: "Not found game"});
-      return res.send(game);
+        return res.status(404).send({ error: "Not found game" });
+
+      const maps = await MapModel.find({ game: id });
+      
+      return res.send({ game: game, maps: maps});
     } catch (error) {
       return res.status(400).send({ error: "Error getting game"});
     }

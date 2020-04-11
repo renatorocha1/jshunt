@@ -32,7 +32,7 @@ const GameSchema = new mongoose.Schema({
   createdAt: {
     type: Date,
     default: Date.now,
-  },
+  }
 });
 
 GameSchema.pre("save", function(){

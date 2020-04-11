@@ -1,13 +1,14 @@
-import React from 'react';
-import Header from './components/Header';
-import Main from './pages/main';
-import './style.css';
+import React, { Fragment } from 'react';
+import Routes from "./routes";
+import GlobalStyle from "./styles/global";
 
-const App = () => (
-  <div className="App">
-    <Header/>
-    <Main/>
-  </div>
-);
+function App() {
+  return (
+    <Fragment>
+      <GlobalStyle />
+      <Routes />
+    </Fragment>
+  );
+}
 
 export default App;
