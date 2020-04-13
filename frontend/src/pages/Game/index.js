@@ -10,6 +10,7 @@ import { Container, Avatar, Article, Title, Button, WrapperScroll, Card, Map } f
 export default class Game extends Component {
   state = {
     game: [],
+    weapons: [],
     officialMaps: [],
     loading: true
   };
@@ -24,12 +25,13 @@ export default class Game extends Component {
     const response = await Api.get(`/games/${this.props.match.params.id}`);
     this.setState({
       game: response.data.game,
+      weapons: response.data.weapons,
       officialMaps: response.data.maps,
       loading: false
     });
   };
   render(){
-    const { game, officialMaps, loading } = this.state;
+    const { game, weapons, officialMaps, loading } = this.state;
 
     if(loading) return <Loading/>
 
@@ -49,7 +51,7 @@ export default class Game extends Component {
           <section>
             <Title>
               <MdKeyboardArrowRight />
-              <h2>Weapons & Equipment</h2>
+              <h2>Weapons</h2>
             </Title>
             <WrapperScroll>
               <Button>Melee</Button>
@@ -63,39 +65,29 @@ export default class Game extends Component {
             </WrapperScroll>
 
             <WrapperScroll>
-              <Card>
-                <header>
-                  <img src="https://ya-webdesign.com/images250_/awp-lightning-strike-png-6.png" alt="Arma" />
-                </header>
-                <p>
-                  <strong>Alternate name(s):</strong>
-                Combat knife, T Knife, CT Knife
-                <strong>Rate of fire:</strong>
-                .4 sec (Primary), 1 sec (Secondary)
-                <strong>Used by:</strong>
-                Terrorist, Counter-Terrorist, VIP
-                <strong>Movement speed:</strong>
-                (units per second) 250
-                <strong>Kill Award:</strong>
-                $1500 (Competitive), $750 (Casual)
-              </p>
-              </Card><Card>
-                <header>
-                  <img src="https://ya-webdesign.com/images250_/awp-lightning-strike-png-6.png" alt="Arma" />
-                </header>
-                <p>
-                  <strong>Alternate name(s):</strong>
-                Combat knife, T Knife, CT Knife
-                <strong>Rate of fire:</strong>
-                .4 sec (Primary), 1 sec (Secondary)
-                <strong>Used by:</strong>
-                Terrorist, Counter-Terrorist, VIP
-                <strong>Movement speed:</strong>
-                (units per second) 250
-                <strong>Kill Award:</strong>
-                $1500 (Competitive), $750 (Casual)
-              </p>
-              </Card>
+              {
+                weapons.map(weapon => {
+                  return (
+                    <Card>
+                      <header>
+                        <img src={weapon.avatarUrl} alt={weapon.title} />
+                      </header>
+                      <p>
+                        <strong>Alternate name(s):</strong>
+                        Combat knife, T Knife, CT Knife
+                        <strong>Rate of fire:</strong>
+                        .4 sec (Primary), 1 sec (Secondary)
+                        <strong>Used by:</strong>
+                        Terrorist, Counter-Terrorist, VIP
+                        <strong>Movement speed:</strong>
+                        (units per second) 250
+                        <strong>Kill Award:</strong>
+                        $1500 (Competitive), $750 (Casual)
+                      </p>
+                    </Card>
+                  )
+                })
+              }
             </WrapperScroll>
           </section>
 

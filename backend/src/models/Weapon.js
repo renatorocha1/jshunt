@@ -1,9 +1,9 @@
 const mongoose = require("mongoose");
 
-const CategoryItemSchema = new mongoose.Schema({
-  category: {
+const WeaponSchema = new mongoose.Schema({
+  game: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: "Category",
+    ref: "Game",
     required: true
   },
   title: {
@@ -23,7 +23,7 @@ const CategoryItemSchema = new mongoose.Schema({
     required: false
   },
   attributes: {
-    type: Array,
+    type: JSON,
     required: true
   },
   createdAt: {
@@ -32,4 +32,4 @@ const CategoryItemSchema = new mongoose.Schema({
   }
 });
 
-mongoose.model("CategoryItem", CategoryItemSchema);
+mongoose.model("Weapon", WeaponSchema);

@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const GameModel = mongoose.model("Game");
+const WeaponModel = mongoose.model("Weapon");
 const MapModel = mongoose.model("Map");
 
 module.exports = {
@@ -26,15 +27,16 @@ module.exports = {
     }
   },
   async show(req, res) {
-    const id = req.params.id;
+    const _id = req.params.id;
     try {
-      const game = await GameModel.findById(id);
-      if(!game)
+      const game = await GameModel.findOne({ _id });
+      if(!game){
         return res.status(404).send({ error: "Not found game" });
-
-      const maps = await MapModel.find({ game: id });
+      }
+      const weapons = await WeaponModel.find({ game: game._id });
+      const maps = await MapModel.find({ game: game._id });
       
-      return res.send({ game: game, maps: maps});
+      return res.send( { game, weapons, maps } );
     } catch (error) {
       return res.status(400).send({ error: "Error getting game"});
     }

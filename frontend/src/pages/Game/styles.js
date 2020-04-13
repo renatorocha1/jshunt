@@ -103,6 +103,7 @@ export const Card = styled.div`
 
   header {
     img {
+      width: 100%;
       display: block;
       margin: 0 auto;
     }

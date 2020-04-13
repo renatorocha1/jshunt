@@ -1,0 +1,472 @@
+{
+  "Assault Rifle": [
+    {
+      "Name": "Assault Rifle [M16] (Common)",
+      "Image": "https://vignette.wikia.nocookie.net/fortnite/images/e/e0/Assault_Rifle.png/revision/latest/scale-to-width-down/160?cb=20190115180900",
+      "Damage": 30,
+      "Headshot": 60,
+      "Fire Rate": 5.5,
+      "Magazine Size": 30,
+      "Reload Speed": 2.3,
+      "Ammo Type":	"Medium"
+    },
+    {
+      "Name": "Assault Rifle [M16] (Uncommon)",
+      "Image": "https://vignette.wikia.nocookie.net/fortnite/images/e/e0/Assault_Rifle.png/revision/latest/scale-to-width-down/160?cb=20190115180900",
+      "Damage": 31,
+      "Headshot": 62,
+      "Fire Rate": 5.5,
+      "Magazine Size": 30,
+      "Reload Speed": 2.2,
+      "Ammo Type":	"Medium"
+    },
+    {
+      "Name": "Assault Rifle [M16] (Rare)",
+      "Image": "https://vignette.wikia.nocookie.net/fortnite/images/e/e0/Assault_Rifle.png/revision/latest/scale-to-width-down/160?cb=20190115180900",
+      "Damage": 33,
+      "Headshot": 66,
+      "Fire Rate": 5.5,
+      "Magazine Size": 30,
+      "Reload Speed": 2.2,
+      "Ammo Type":	"Medium"
+    },
+    {
+      "Name": "Assault Rifle [SCAR-L] (Epic)",
+      "Image": "https://vignette.wikia.nocookie.net/fortnite/images/9/9b/Icon_Weapons_SK_SCAR_L.png/revision/latest/scale-to-width-down/160?cb=20170806003452",
+      "Damage": 35,
+      "Headshot": 70,
+      "Fire Rate": 5.5,
+      "Magazine Size": 30,
+      "Reload Speed": 2.1,
+      "Ammo Type":	"Medium"
+    },
+    {
+      "Name": "Assault Rifle [SCAR-L] (Legendary)",
+      "Image": "https://vignette.wikia.nocookie.net/fortnite/images/9/9b/Icon_Weapons_SK_SCAR_L.png/revision/latest/scale-to-width-down/160?cb=20170806003452",
+      "Damage": 36,
+      "Headshot": 72,
+      "Fire Rate": 5.5,
+      "Magazine Size": 30,
+      "Reload Speed": 2.1,
+      "Ammo Type":	"Medium"
+    },
+    {
+      "Name": "Assault Rifle [SCAR-L] (Mythic)",
+      "Image": "https://vignette.wikia.nocookie.net/fortnite/images/9/9b/Icon_Weapons_SK_SCAR_L.png/revision/latest/scale-to-width-down/160?cb=20170806003452",
+      "Damage": 37,
+      "Headshot": 74,
+      "Fire Rate": 6,
+      "Magazine Size": 30,
+      "Reload Speed": 2.1,
+      "Ammo Type":	"Medium"
+    },
+    {
+      "Name": "Burst [FAMAS] (Common)",
+      "Image": "https://vignette.wikia.nocookie.net/fortnite/images/a/ab/Chapter2burst.png/revision/latest/scale-to-width-down/160?cb=20191016162611",
+      "Damage": 27,
+      "Headshot": 54,
+      "Fire Rate": 4.91,
+      "Magazine Size": 30,
+      "Reload Speed": 2.9,
+      "Ammo Type":	"Medium Bullets"
+    },
+    {
+      "Name": "Burst [FAMAS] (Uncommon)",
+      "Image": "https://vignette.wikia.nocookie.net/fortnite/images/a/ab/Chapter2burst.png/revision/latest/scale-to-width-down/160?cb=20191016162611",
+      "Damage": 29,
+      "Headshot": 58,
+      "Fire Rate": 4.91,
+      "Magazine Size": 30,
+      "Reload Speed": 2.7,
+      "Ammo Type":	"Medium Bullets"
+    },
+    {
+      "Name": "Burst [FAMAS] (Rare)",
+      "Image": "https://vignette.wikia.nocookie.net/fortnite/images/a/ab/Chapter2burst.png/revision/latest/scale-to-width-down/160?cb=20191016162611",
+      "Damage": 30,
+      "Headshot": 60,
+      "Fire Rate": 4.91,
+      "Magazine Size": 30,
+      "Reload Speed": 2.6,
+      "Ammo Type":	"Medium Bullets"
+    },
+    {
+      "Name": "Burst [AUG] (Epic)",
+      "Image": "https://vignette.wikia.nocookie.net/fortnite/images/2/22/Chapter2burst2.png/revision/latest/scale-to-width-down/160?cb=20191016162551",
+      "Damage": 32,
+      "Headshot": 64,
+      "Fire Rate": 4.91,
+      "Magazine Size": 30,
+      "Reload Speed": 2.5,
+      "Ammo Type":	"Medium"
+    },
+    {
+      "Name": "Burst [AUG] (Legendary)",
+      "Image": "https://vignette.wikia.nocookie.net/fortnite/images/2/22/Chapter2burst2.png/revision/latest/scale-to-width-down/160?cb=20191016162551",
+      "Damage": 33,
+      "Headshot": 66,
+      "Fire Rate": 4.91,
+      "Magazine Size": 30,
+      "Reload Speed": 2.3,
+      "Ammo Type":	"Medium"
+    },
+    {
+      "Name": "Heavy [AK-74](Common)",
+      "Image": "https://vignette.wikia.nocookie.net/fortnite/images/2/22/Chapter2burst2.png/revision/latest/scale-to-width-down/160?cb=20191016162551",
+      "Damage": 33,
+      "Headshot": 66,
+      "Fire Rate": 4.25,
+      "Magazine Size": 25,
+      "Reload Speed": 3.1,
+      "Ammo Type":	"Medium"
+    },
+    {
+      "Name": "Heavy [AK-74](Uncommon)",
+      "Image": "https://vignette.wikia.nocookie.net/fortnite/images/2/22/Chapter2burst2.png/revision/latest/scale-to-width-down/160?cb=20191016162551",
+      "Damage": 35,
+      "Headshot": 70,
+      "Fire Rate": 4.25,
+      "Magazine Size": 25,
+      "Reload Speed": 2.9,
+      "Ammo Type":	"Medium"
+    },
+    {
+      "Name": "Heavy [Chukalvin](Epic)",
+      "Image": "https://vignette.wikia.nocookie.net/fortnite/images/2/22/Chapter2burst2.png/revision/latest/scale-to-width-down/160?cb=20191016162551",
+      "Damage": 39,
+      "Headshot": 78,
+      "Fire Rate": 4.25,
+      "Magazine Size": 25,
+      "Reload Speed": 2.7,
+      "Ammo Type":	"Medium"
+    },
+    {
+      "Name": "Heavy [Chukalvin](Legendary)",
+      "Image": "https://vignette.wikia.nocookie.net/fortnite/images/2/22/Chapter2burst2.png/revision/latest/scale-to-width-down/160?cb=20191016162551",
+      "Damage": 41,
+      "Headshot": 82,
+      "Fire Rate": 4.25,
+      "Magazine Size": 25,
+      "Reload Speed": 2.5,
+      "Ammo Type":	"Medium"
+    },
+    {
+      "Name": "Meowscle's Peow Peow Rifle [Chukalvin](Mythic)",
+      "Image": "https://vignette.wikia.nocookie.net/fortnite/images/2/22/Chapter2burst2.png/revision/latest/scale-to-width-down/160?cb=20191016162551",
+      "Damage": 44,
+      "Headshot": 88,
+      "Fire Rate": 4.25,
+      "Magazine Size": 25,
+      "Reload Speed": 2.5,
+      "Ammo Type":	"Medium"
+    },
+    {
+      "Name": "Scoped (Uncommon) Vaulted",
+      "Image": "https://vignette.wikia.nocookie.net/fortnite/images/5/59/Scoped_Assault_Rifle.png/revision/latest/scale-to-width-down/160?cb=20190115180306",
+      "Damage": 26,
+      "Headshot": 52,
+      "Fire Rate": 3.5,
+      "Magazine Size": 15,
+      "Reload Speed": 2.3,
+      "Ammo Type":	"Medium Bullets"
+    },
+    {
+      "Name": "Scoped (Rare) Vaulted",
+      "Image": "https://vignette.wikia.nocookie.net/fortnite/images/5/59/Scoped_Assault_Rifle.png/revision/latest/scale-to-width-down/160?cb=20190115180306",
+      "Damage": 27,
+      "Headshot": 54,
+      "Fire Rate": 3.5,
+      "Magazine Size": 20,
+      "Reload Speed": 2.2,
+      "Ammo Type":	"Medium Bullets"
+    },
+    {
+      "Name": "Suppressed [Suppressed SCAR-L] (Rare)",
+      "Image": "https://vignette.wikia.nocookie.net/fortnite/images/f/f7/Icon_Suppressed_Assault_Rifle_-_Fortnite.png/revision/latest/scale-to-width-down/160?cb=20180912162045",
+      "Damage": 30,
+      "Headshot": 60,
+      "Fire Rate": 5.5,
+      "Magazine Size": 30,
+      "Reload Speed": 2.3,
+      "Ammo Type":	"Medium"
+    },
+    {
+      "Name": "Suppressed [Suppressed SCAR-L] (Epic)",
+      "Image": "https://vignette.wikia.nocookie.net/fortnite/images/f/f7/Icon_Suppressed_Assault_Rifle_-_Fortnite.png/revision/latest/scale-to-width-down/160?cb=20180912162045",
+      "Damage": 32,
+      "Headshot": 64,
+      "Fire Rate": 5.5,
+      "Magazine Size": 30,
+      "Reload Speed": 2.1,
+      "Ammo Type":	"Medium"
+    },
+    {
+      "Name": "Suppressed [Suppressed SCAR-L] (Legendary)",
+      "Image": "https://vignette.wikia.nocookie.net/fortnite/images/f/f7/Icon_Suppressed_Assault_Rifle_-_Fortnite.png/revision/latest/scale-to-width-down/160?cb=20180912162045",
+      "Damage": 33,
+      "Headshot": 66,
+      "Fire Rate": "",
+      "Magazine Size": 30,
+      "Reload Speed": 2.0,
+      "Ammo Type":	"Medium"
+    },
+    {
+      "Name": "Infantry Rifle (Common) Vaulted",
+      "Image": "https://vignette.wikia.nocookie.net/fortnite/images/6/61/Infantry_Rifle_-_Weapon_-_Fortnite.png/revision/latest/scale-to-width-down/160?cb=20190520031306",
+      "Damage": 36,
+      "Headshot": 72,
+      "Fire Rate": 4.0,
+      "Magazine Size": 8,
+      "Reload Speed": 2.5,
+      "Ammo Type":	"Medium"
+    },
+    {
+      "Name": "Infantry Rifle (Uncommon) Vaulted",
+      "Image": "https://vignette.wikia.nocookie.net/fortnite/images/6/61/Infantry_Rifle_-_Weapon_-_Fortnite.png/revision/latest/scale-to-width-down/160?cb=20190520031306",
+      "Damage": 38,
+      "Headshot": 76,
+      "Fire Rate": 4.0,
+      "Magazine Size": 8,
+      "Reload Speed": 2.4,
+      "Ammo Type":	"Medium"
+    },
+    {
+      "Name": "Infantry Rifle (Rare) Vaulted",
+      "Image": "https://vignette.wikia.nocookie.net/fortnite/images/6/61/Infantry_Rifle_-_Weapon_-_Fortnite.png/revision/latest/scale-to-width-down/160?cb=20190520031306",
+      "Damage": 40,
+      "Headshot": 80,
+      "Fire Rate": 4.0,
+      "Magazine Size": 8,
+      "Reload Speed": 2.3,
+      "Ammo Type":	"Medium"
+    },
+    {
+      "Name": "Infantry Rifle [SKS] (Epic) Vaulted",
+      "Image": "https://vignette.wikia.nocookie.net/fortnite/images/8/80/Infantry_Rifle_Epic_-_Weapon_-_Fortnite.png/revision/latest/scale-to-width-down/160?cb=20190606064949",
+      "Damage": 42,
+      "Headshot": 84,
+      "Fire Rate": 4.0,
+      "Magazine Size": 10,
+      "Reload Speed": 2.2,
+      "Ammo Type":	"Medium"
+    },
+    {
+      "Name": "Infantry Rifle [SKS] (Legendary) Vaulted",
+      "Image": "https://vignette.wikia.nocookie.net/fortnite/images/8/80/Infantry_Rifle_Epic_-_Weapon_-_Fortnite.png/revision/latest/scale-to-width-down/160?cb=20190606064949",
+      "Damage": 44,
+      "Headshot": 88,
+      "Fire Rate": 4.0,
+      "Magazine Size": 10,
+      "Reload Speed": 2.1,
+      "Ammo Type":	"Medium"
+    },
+    {
+      "Name": "Thermal (Epic) Vaulted",
+      "Image": "https://vignette.wikia.nocookie.net/fortnite/images/8/80/Infantry_Rifle_Epic_-_Weapon_-_Fortnite.png/revision/latest/scale-to-width-down/160?cb=20190606064949",
+      "Damage": 36,
+      "Headshot": 72,
+      "Fire Rate": 1.8,
+      "Magazine Size": 15,
+      "Reload Speed": 2.2,
+      "Ammo Type":	"Medium"
+    },
+    {
+      "Name": "Thermal (Legendary) Vaulted",
+      "Image": "https://vignette.wikia.nocookie.net/fortnite/images/8/80/Infantry_Rifle_Epic_-_Weapon_-_Fortnite.png/revision/latest/scale-to-width-down/160?cb=20190606064949",
+      "Damage": 37,
+      "Headshot": 74,
+      "Fire Rate": 1.8,
+      "Magazine Size": 15,
+      "Reload Speed": 2.1,
+      "Ammo Type":	"Medium"
+    },
+    {
+      "Name": "Tactical Assault Rifle (Rare) Vaulted",
+      "Image": "https://vignette.wikia.nocookie.net/fortnite/images/a/a2/Tactical_Assault_Rifle.png/revision/latest/scale-to-width-down/160?cb=20190625155401",
+      "Damage": 22,
+      "Headshot": 39,
+      "Fire Rate": 7.0,
+      "Magazine Size": 30,
+      "Reload Speed": 2.2,
+      "Ammo Type":	"Light"
+    },
+    {
+      "Name": "Tactical Assault Rifle (Epic) Vaulted",
+      "Image": "https://vignette.wikia.nocookie.net/fortnite/images/a/a2/Tactical_Assault_Rifle.png/revision/latest/scale-to-width-down/160?cb=20190625155401",
+      "Damage": 23,
+      "Headshot": 40,
+      "Fire Rate": 7.0,
+      "Magazine Size": 30,
+      "Reload Speed": 2.09,
+      "Ammo Type":	"Light"
+    },
+    {
+      "Name": "Tactical Assault Rifle (Legendary) Vaulted",
+      "Image": "https://vignette.wikia.nocookie.net/fortnite/images/a/a2/Tactical_Assault_Rifle.png/revision/latest/scale-to-width-down/160?cb=20190625155401",
+      "Damage": 24,
+      "Headshot": 42,
+      "Fire Rate": 7.0,
+      "Magazine Size": 30,
+      "Reload Speed": 1.98,
+      "Ammo Type":	"Light"
+    },
+    {
+      "Name": "Crossbow",
+      "Image": "https://vignette.wikia.nocookie.net/fortnite/images/2/23/Crossbow_icon.png/revision/latest?cb=20200227191535",
+      "Damage": "75-79",
+      "Headshot": "",
+      "Fire Rate": 0.6,
+      "Magazine Size": 5,
+      "Reload Speed": "",
+      "Ammo Type":	"Arrows"
+    },
+    {
+      "Name": "Fiend Hunter Crossbow",
+      "Image": "https://vignette.wikia.nocookie.net/fortnite/images/6/6f/Fiend-Hunter-Crossbow-Weapon.png/revision/latest?cb=20200227191343",
+      "Damage": "75-79",
+      "Headshot": "",
+      "Fire Rate": 0.6,
+      "Magazine Size": 5,
+      "Reload Speed": "",
+      "Ammo Type":	"Arrows"
+    },
+    {
+      "Name": "Cupid's Crossbow",
+      "Image": "https://vignette.wikia.nocookie.net/fortnite/images/1/1a/Cupid%27s_Crossbow.png/revision/latest?cb=20190625231330",
+      "Damage": "75-79",
+      "Headshot": "",
+      "Fire Rate": 0.6,
+      "Magazine Size": 5,
+      "Reload Speed": "",
+      "Ammo Type":	"Arrows"
+    },
+    {
+      "Name": "Rocket Launcher (Common) Vaulted",
+      "Image": "https://vignette.wikia.nocookie.net/fortnite/images/4/48/Icon_Weapons_SK_RPG7_L.png/revision/latest/scale-to-width-down/160?cb=20170806003607",
+      "Damage": 70,
+      "Fire Rate": 0.75,
+      "Capacity": 1,
+      "Reload Speed": "N/A",
+      "Ammo Type":	"Rockets"
+    },
+    {
+      "Name": "Rocket Launcher (Uncommon)",
+      "Image": "https://vignette.wikia.nocookie.net/fortnite/images/4/48/Icon_Weapons_SK_RPG7_L.png/revision/latest/scale-to-width-down/160?cb=20170806003607",
+      "Damage": 85,
+      "Fire Rate": 0.75,
+      "Capacity": 1,
+      "Reload Speed": "N/A",
+      "Ammo Type":	"Rockets"
+    },
+    {
+      "Name": "Rocket Launcher (Rare)",
+      "Image": "https://vignette.wikia.nocookie.net/fortnite/images/4/48/Icon_Weapons_SK_RPG7_L.png/revision/latest/scale-to-width-down/160?cb=20170806003607",
+      "Damage": 100,
+      "Fire Rate": 0.75,
+      "Capacity": 1,
+      "Reload Speed": "N/A",
+      "Ammo Type":	"Rockets"
+    },
+    {
+      "Name": "Rocket Launcher (Epic)",
+      "Image": "https://vignette.wikia.nocookie.net/fortnite/images/6/63/Chapter_2_rpg.png/revision/latest/scale-to-width-down/160?cb=20200212175049",
+      "Damage": 115,
+      "Fire Rate": 0.75,
+      "Capacity": 1,
+      "Reload Speed": 3.42,
+      "Ammo Type":	"Rockets"
+    },
+    {
+      "Name": "Rocket Launcher (Legendary)",
+      "Image": "https://vignette.wikia.nocookie.net/fortnite/images/6/63/Chapter_2_rpg.png/revision/latest/scale-to-width-down/160?cb=20200212175049",
+      "Damage": 130,
+      "Fire Rate": 0.75,
+      "Capacity": 1,
+      "Reload Speed": 3.24,
+      "Ammo Type":	"Rockets"
+    },
+    {
+      "Name": "Grenade Launcher (Rare)",
+      "Image": "https://vignette.wikia.nocookie.net/fortnite/images/e/e9/Icon_Weapons_SK_Grenade_Launcher_L.png/revision/latest/scale-to-width-down/160?cb=20170806003558",
+      "Damage": 100,
+      "Fire Rate": 1,
+      "Capacity": 6,
+      "Reload Speed": 3.0,
+      "Ammo Type":	"Rockets"
+    },
+    {
+      "Name": "Grenade Launcher (Epic)",
+      "Image": "https://vignette.wikia.nocookie.net/fortnite/images/e/e9/Icon_Weapons_SK_Grenade_Launcher_L.png/revision/latest/scale-to-width-down/160?cb=20170806003558",
+      "Damage": 105,
+      "Fire Rate": 1,
+      "Capacity": 6,
+      "Reload Speed": 2.8,
+      "Ammo Type":	"Rockets"
+    },
+    {
+      "Name": "Grenade Launcher (Legendary)",
+      "Image": "https://vignette.wikia.nocookie.net/fortnite/images/e/e9/Icon_Weapons_SK_Grenade_Launcher_L.png/revision/latest/scale-to-width-down/160?cb=20170806003558",
+      "Damage": 110,
+      "Fire Rate": 1,
+      "Capacity": 6,
+      "Reload Speed": 2.7,
+      "Ammo Type":	"Rockets"
+    },
+    {
+      "Name": "Quad Launcher (Epic) Vaulted",
+      "Image": "https://vignette.wikia.nocookie.net/fortnite/images/f/fa/Quad_Launcher_-_Weapon_-_Fortnite.png/revision/latest/scale-to-width-down/160?cb=20190625231409",
+      "Damage": 80,
+      "Fire Rate": 1,
+      "Capacity": 4,
+      "Reload Speed": 4.8,
+      "Ammo Type":	"Rockets"
+    },
+    {
+      "Name": "Quad Launcher (Legendary) Vaulted",
+      "Image": "https://vignette.wikia.nocookie.net/fortnite/images/f/fa/Quad_Launcher_-_Weapon_-_Fortnite.png/revision/latest/scale-to-width-down/160?cb=20190625231409",
+      "Damage": 84,
+      "Fire Rate": 1,
+      "Capacity": 4,
+      "Reload Speed": 4.5,
+      "Ammo Type":	"Rockets"
+    },
+    {
+      "Name": "Proximity Grenade Launcher (Epic) Vaulted",
+      "Image": "https://vignette.wikia.nocookie.net/fortnite/images/e/ef/Proximity-grenade-launcher.png/revision/latest/scale-to-width-down/160?cb=20190612171702",
+      "Damage": 67,
+      "Fire Rate": 0.65,
+      "Capacity": 2,
+      "Reload Speed": 2.8,
+      "Ammo Type":	"Rockets"
+    },
+    {
+      "Name": "Proximity Grenade Launcher (Legendary) Vaulted",
+      "Image": "https://vignette.wikia.nocookie.net/fortnite/images/e/ef/Proximity-grenade-launcher.png/revision/latest/scale-to-width-down/160?cb=20190612171702",
+      "Damage": 70,
+      "Fire Rate": 0.65,
+      "Capacity": 2,
+      "Reload Speed": 3.0,
+      "Ammo Type":	"Rockets"
+    },
+    {
+      "Name": "Boom Bow (Legendary) Vaulted",
+      "Image": "https://vignette.wikia.nocookie.net/fortnite/images/1/10/Boom_bow.png/revision/latest/scale-to-width-down/171?cb=20190620152232",
+      "Direct-Hit Damage": 115,
+      "Splash Damage": 100,
+      "Fire Rate": 1,
+      "Capacity": 1,
+      "Reload Speed":	1.25,
+      "Ammo Type": "Shotgun Shells"
+    },
+    {
+      "Name": "Boom Bow (Legendary) Vaulted",
+      "Image": "https://vignette.wikia.nocookie.net/fortnite/images/1/10/Boom_bow.png/revision/latest/scale-to-width-down/171?cb=20190620152232",
+      "Direct-Hit Damage": 115,
+      "Splash Damage": 100,
+      "Fire Rate": 1,
+      "Capacity": 1,
+      "Reload Speed":	1.25,
+      "Ammo Type": "Shotgun Shells"
+    },
+  ]
+}
