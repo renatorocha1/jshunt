@@ -28,7 +28,7 @@ class Main extends Component {
       <MainWrapper>
         <Container>
           <Navbar/>
-          <p>Acompanhe os updates e melhore seu progresso nos melhores games de battle royale</p>
+          <p>The best battle royales</p>
           {
             games.map(game => (
               <Card
