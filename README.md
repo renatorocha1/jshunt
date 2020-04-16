@@ -16,7 +16,7 @@
 <br>
 
 <p align="center">
-  <img alt="JSHunt" src=".github/jshunt-banner.png" width="100%">
+  <img alt="JSHunt" src=".github/jshunt-banner.jpg" width="100%">
 </p>
 
 ## 💻 Tecnologies
