@@ -10,8 +10,9 @@ import { Container, Avatar, Article, Title, Button, WrapperScroll, Card, Map } f
 export default class Game extends Component {
   state = {
     game: [],
-    weapons: [],
+    categories: [],
     officialMaps: [],
+    activeCateg: 0,
     loading: true
   };
   static propTypes = {
@@ -25,13 +26,21 @@ export default class Game extends Component {
     const response = await Api.get(`/games/${this.props.match.params.id}`);
     this.setState({
       game: response.data.game,
-      weapons: response.data.weapons,
+      categories: response.data.categories,
       officialMaps: response.data.maps,
+      activeCateg: 0,
       loading: false
     });
   };
+
+  setCategoryActive = (index) => {
+    this.setState({
+      activeCateg: index
+    });
+  };
+
   render(){
-    const { game, weapons, officialMaps, loading } = this.state;
+    const { game, categories, activeCateg, officialMaps, loading } = this.state;
 
     if(loading) return <Loading/>
 
@@ -54,36 +63,36 @@ export default class Game extends Component {
               <h2>Weapons</h2>
             </Title>
             <WrapperScroll>
-              <Button>Melee</Button>
-              <Button>Pistols</Button>
-              <Button>Shotguns</Button>
-              <Button>Submachine</Button>
-              <Button>Submachine</Button>
-              <Button>Submachine</Button>
-              <Button>Submachine</Button>
-              <Button>Submachine</Button>
+              {
+                categories.map((category, index) => {
+                  return <Button
+                            onClick={() => this.setCategoryActive(index)}
+                            active={index === activeCateg}
+                            key={category._id}>{category._id}</Button>
+                })
+              }
             </WrapperScroll>
 
             <WrapperScroll>
               {
-                weapons.map(weapon => {
+                categories[activeCateg].weapons.map(weapon => {
+                  const attributes = JSON.parse(weapon.attributes);
                   return (
-                    <Card>
+                    <Card key={weapon.id}>
                       <header>
                         <img src={weapon.avatarUrl} alt={weapon.title} />
                       </header>
                       <p>
-                        <strong>Alternate name(s):</strong>
-                        Combat knife, T Knife, CT Knife
-                        <strong>Rate of fire:</strong>
-                        .4 sec (Primary), 1 sec (Secondary)
-                        <strong>Used by:</strong>
-                        Terrorist, Counter-Terrorist, VIP
-                        <strong>Movement speed:</strong>
-                        (units per second) 250
-                        <strong>Kill Award:</strong>
-                        $1500 (Competitive), $750 (Casual)
-                      </p>
+                        {
+                        Object.entries(attributes).map((attribute, index) => {
+                          return (
+                            <span key={`${attribute}-${index}`}>
+                              <strong>{attribute[0]}:</strong> {attribute[1]}
+                            </span>
+                          )
+                        })
+                        }
+                        </p>
                     </Card>
                   )
                 })

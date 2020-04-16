@@ -33,10 +33,19 @@ module.exports = {
       if(!game){
         return res.status(404).send({ error: "Not found game" });
       }
-      const weapons = await WeaponModel.find({ game: game._id });
+      const weapons = await WeaponModel.aggregate()
+      .group({ 
+        _id: "$type",
+        game: { $addToSet: "$game"},
+        weapons: { $push: "$$ROOT" }
+      })
+      .exec();
+      const categories = weapons.filter(cat => {
+        return cat.game[0] == _id;
+      });
       const maps = await MapModel.find({ game: game._id });
       
-      return res.send( { game, weapons, maps } );
+      return res.send({ game, categories, maps } );
     } catch (error) {
       return res.status(400).send({ error: "Error getting game"});
     }

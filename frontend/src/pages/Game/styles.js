@@ -57,12 +57,13 @@ export const Title = styled.div`
 
 export const Button = styled.button`
   background-color: #222222;
-  border: 1px solid #707070;
+  border: 1px solid ${props => props.active ? '#FAE400' : '#707070'};
   border-radius: 5px;
   margin-bottom: 10px;
-  padding: 10px 20px;
-  color: #707070;
+  padding: 10px 25px;
+  color: ${props => props.active ? '#FAE400' : '#707070'};
   flex: 1 0;
+  white-space: nowrap;
 
   & + button {
     margin-left: 10px;
@@ -104,6 +105,7 @@ export const Card = styled.div`
   header {
     img {
       width: 100%;
+      max-width: 300px;
       display: block;
       margin: 0 auto;
     }

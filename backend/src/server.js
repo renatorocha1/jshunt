@@ -15,6 +15,7 @@ mongoose.connect(url_connection, {
   useCreateIndex: true,
   useFindAndModify: false,
 });
+// mongoose.set('debug', true);
 requireDir("./models");
 
 const app = express();
